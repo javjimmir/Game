@@ -1,0 +1,268 @@
+@font-face {
+font-family:Gate;
+src: url(../font/Gate.ttf);
+}
+
+@font-face {
+font-family:run;
+src: url(../font/Run.ttf);
+}
+
+body {
+	overflow: hidden;
+	/* Para que no se pueda mover la barra */
+}
+	/* Ajuste del fondo del juego y las estadisticas del jugador (a la derecha) */
+.img {
+    padding-bottom: 62.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 102%;
+	height: 100%;
+	background-color: white;
+}
+
+.img-gui {
+	background-color: black;
+	width: 120%;
+	height: 100%;
+    padding-bottom: 62.5%;
+    background-size: 300px;
+    background-repeat: repeat;
+    opacity: 1;
+}
+.img-gui:hover {
+    opacity: 1;
+}
+
+.item {
+    position: absolute;
+    background-color: beige;
+}
+#router {
+    left: 87%;
+    top: 55%;
+    width: 5%;
+    height: 5%;
+}
+#libro {
+    left: 10%;
+    top: 35%;
+    width: 22%;
+    height: 15%;
+}
+#movil {
+    left: 20%;
+    top: 60%;
+    width: 5%;
+    height: 5%;
+}
+#cable {
+    left: 72%;
+    top: 68%;
+    width: 10%;
+    height: 5%;
+}
+#proveedor {
+    left: 43%;
+    top: 1%;
+    width: 10%;
+    height: 4%;
+}
+#lupa {
+    border-radius: 30px;
+    position:absolute;
+    background-color: red;
+    left: 3%;
+    top: 82%;
+    width: 5%;
+    height: 7%;
+}
+
+#lupa img{
+    width: 140px;
+    height: 100px;
+}
+
+#pc {
+    left: 84%;
+    top: 67%;
+    width: 12%;
+    height: 13%;
+}
+
+#navegador {
+    left: 81.5%;
+    top: 38%;
+    width: 5%;
+    height: 7%;
+}
+
+/* Implementado por juan el 08/02 */
+
+#perfil {
+    margin-top: 10%;
+    width: 75%;
+    height: 15%;
+    left: 15%;
+    padding: 5%;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#info {
+    margin-top: 10%;
+    top: 16%;
+    width: 75%;
+    height: 35%;
+    left: 15%;
+    padding: 5%;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#vidas {
+    margin-top: 10%;
+    top: 52%;
+    width: 75%;
+    height: 12%;
+    left: 15%;
+    padding: 5%;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#pista {
+    margin-top: 10%;
+    top: 65%;
+    width: 75%;
+    height: 23%;
+    left: 15%;
+    padding: 5%;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+i {
+    font-size: 20px;
+}
+/* fin imple. */
+
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+
+.cnt223 a{
+text-decoration: none;
+}
+.popup{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+}
+.cnt223{
+min-width: 600px;
+width: 1000px;
+min-height: 150px;
+margin: 100px auto;
+background: #f3f3f3;
+position: relative;
+z-index: 103;
+padding: 15px 35px;
+border-radius: 40px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 p{
+clear: both;
+        /* text-align: justify; */
+    font-size: 1.6em;
+    font-family: Gate;
+
+}
+.cnt223 h1{
+font-family: Gate;
+font-size: 4em;
+color: red
+}
+.cnt223 h2{
+font-family: Gate;
+font-size: 3em;
+}
+.cnt223 p a{
+
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+
+.popup li{
+  font-family: Gate;
+  font-size: 1.6em;
+}
+
+.popup img{
+    width: 30%;
+    height: 30%;
+    float: right;
+
+}
+
+.usuario{
+    font-family: Gate;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.start{
+    font-family: run;
+    border-radius: 15px;
+    font-size: 2.5em;
+    width: 85%;
+    height: 20%;
+    letter-spacing: 10px;
+}
+
+/* De pepe */
+
+.otroPopup{
+	width: 100%;
+	margin: 0;
+	display: none;
+	position: fixed;
+	z-index: 101;
+}
+.reloj{
+    
+	font-weight: bold;
+	font-size: 45px;
+	color: red;
+}
+/* De pepe */
+

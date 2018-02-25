@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>(Nombre del juego)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style/estilo.css">
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+
+	<!-- Juan -->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Juan -->
+
+	<script type="text/javascript" src="js/reloj.js"></script>
+	<script type="text/javascript" src="js/countdowntimer.js"></script>
+
+</head>
+<body class="container-fluid">
+
+
+
+<!-- Parte Javi, Popup de inicio -->
+	<div class='popup'>
+		<div class='cnt223 text-center'>
+			<h1>Nombre del Juego</h1>
+			<h2>Descripcion</h2>
+			<p>
+				En la oficina se encuentran ubicados <strong>7 elementos</strong> que nos facilitaran el acceso a la comunicacion, responde bien a las preguntas sobre ellos en el menor tiempo posible y conseguiras  .
+				<p>
+
+					<h2>Reglas del juego</h2>
+					<div class="imgstart">
+						<img src="images/lupa.png" alt="">
+					</div>
+					<ol class="text-left">
+						<li>Dispones de 5 minutos para:</li>
+						<li>Encontrar los 7 objetos que nos ayudaran a acceder a informacion</li>
+						<li>Utilice la Lupa para facilitar su busqueda</li>
+						<li>Una vez encontrado, ahora toca responder bien a la pregunta</li>
+					</ol>
+
+					<br/>
+					<h2>Introduzca su nombre</h2>
+					<input type="text" class="usuario" id="usuario"><br><br>
+					<button type="button" class="btn btn-primary cerrar start" id="iniciarJuego">START</button>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-xs-12">
+
+				<div id="popup" style="display: none;">
+					<div class="content-popup">
+						<div class="close"><a href="#" id="close"><img src="images/close.png"/></a></div>
+						<div>
+							<h2>Contenido POPUP</h2>
+							...
+						</div>
+					</div>
+				</div>
+									<div class='popup-pc otroPopup' style="display: none;">
+										<div class='cnt223 text-center'>
+											<h4 class="text-center" id="tituloPopup"></h4>
+											<p id="preguntas-pc"></p>
+											<div id="opciones-pc">
+											</div>
+										</div>
+									</div>
+
+<!-- Fin Javi, Popup de inicio -->
+
+				<div class="img" style="background-image: url('images/bg_ScapeRoom.jpg');">
+					<p id="cuentaAtras" class="reloj"></p>
+					<div class="item" id="pc">pc</div>
+					<div class="item" id="libro">libro</div>
+					<div class="item" id="movil">movil</div>
+					<div class="item" id="router">router</div>
+					<div class="item" id="cable">cable</div>
+					<div class="item" id="proveedor">proveedor</div>
+					<div class="item" id="navegador">navegador</div>
+					<div class="" id="lupa">
+						<img src="./images/lupa.png" alt="">
+					</div>
+				</div>
+			</div>
+
+
+<!-- Parte Juan, perfil usuario -->
+			<div class="col-md-2 col-xs-12">
+				<div class="img-gui" style="background-image: url('images/gui-background.jpg');">
+					<div id="perfil" class="rounded">
+						<img src="images/perfil.jpg" class="rounded-circle" alt="perfil" width="100" height="100">
+						<p class="playername">PlayerName</p>
+					</div>
+
+					<div id="info" class="rounded">
+						<p><strong>Has encontrado</strong></p>
+						<h3 class="display-4"><strong class="text-primary" id="itemsactuales">0</strong><strong class="text-danger">/7</strong></h3><i>items</i><hr>
+						<p><strong>Timpo restante</strong></p>
+						<h3 class="display-4"><strong class="text-primary" id="puntosactuales">0</strong></h3>
+					</div>
+
+					<div id="vidas" class="rounded">
+						<p><strong>Vidas restantes</strong></p>
+						<img src="images/vida.png" id="vida1" class="img-responsive" alt="vida" width="50" height="45">
+						<img src="images/vida.png" id="vida2" class="img-responsive" alt="vida" width="50" height="45">
+						<img src="images/vida.png" id="vida3" class="img-responsive" alt="vida" width="50" height="45">
+					</div>
+
+
+					<div id="pista" class="rounded">
+						<p><strong>Pista de la lupa</strong></p>
+						<p id="lapista"></p>
+					</div>
+<!-- Fin Juan, perfil usuario -->
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
